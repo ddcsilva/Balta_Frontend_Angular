@@ -11,11 +11,16 @@ export class AppComponent {
   // [] -> Um Array (Lista)
   // Se não inicializar é undefined, se inicializar é vazio
   public todos: any[] = [];
+  public titulo: String = "Minhas Tarefas";
 
   // Construtor chamado toda vez que meu componente inicia
   constructor() {
     this.todos.push("Passear com o Cachorro");
     this.todos.push("Ir ao Supermercado");
     this.todos.push("Cortar o Cabelo");
+  }
+
+  alteraTexto() {
+    this.titulo = "Teste";
   }
 }
